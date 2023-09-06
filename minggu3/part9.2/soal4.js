@@ -18,7 +18,7 @@ function cariModus(arr) {
     if ((arr[i - 1] || 0) == arr[i]) {
       j++;
       if (j > modusArray[1]) {
-        modusArray[0] = arr[i];
+        modusArray[0] = arr[i]; 
         modusArray[1] = j + 1;
       }
     } else {
