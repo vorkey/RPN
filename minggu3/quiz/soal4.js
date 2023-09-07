@@ -38,6 +38,9 @@ function graduates (students) {
                 )
             }
         }
+        if (resObject[`${s.class}`] == undefined) {
+            resObject[`${s.class}`] = [];
+        }
     });
 
     return resObject;
@@ -101,6 +104,12 @@ console.log(graduates([
     name: 'Viktor',
     score: 80,
     class: 'tigers'
+},
+// Test case nya gw tambahin 1 biar bisa ngetes jika murid tidak ada yang lulus
+{
+    name: 'Deez',
+    score: 74,
+    class: 'sloth'
 }
 ]));
 
@@ -115,6 +124,7 @@ console.log(graduates([
 //   tigers: [
 //     { name: 'Viktor', score: 80 }
 //   ]
+//   sloth: []
 // }
 
 
