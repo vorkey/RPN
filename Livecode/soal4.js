@@ -12,7 +12,7 @@ function duplicateCount(text){
         tempArr.forEach(e => {
             if (tempArr[i].toLowerCase() == e.toLowerCase()) {
                 count += 1;
-                tempObj[`${e.toLowerCase()}`] = count
+                tempObj[`${e.toLowerCase()}`] = count;
             }
         });
     }
